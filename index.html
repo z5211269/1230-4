@@ -20,20 +20,21 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZWxlaW5lam9oYW5zb24iLCJhIjoiY2lzczduYzJ4M
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/light-v9', // stylesheet location
-    center: [151.004105, -33.813002], // starting position [lng, lat]
-    pitch: 45,
-    bearing: -17.6,
-    zoom: 9 // starting zoom
+    center: [140, -30], // starting position [lng, lat]
+    pitch: 40,
+    bearing: 20,
+    zoom: 5 // starting zoom
 });
 map.on('load', function() {
     map.addLayer({
-        "id": "data",
+        "id": 'data',
         "type": "fill-extrusion",
         "source": {
         	'type': 'geojson',
         	'data': data
         },
            'paint': {
+               'fill-extrusion-color': {
                 'property': 'bangzhu1',
                 "stops": [
                     [0, 'pinck'],
@@ -42,7 +43,6 @@ map.on('load', function() {
                     [61, 'blue'],
                     [164, 'purplr']
                     ]
-                    
                 },
                 'fill-extrusion-height' : {
                    'property': 'MIDDLE',
