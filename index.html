@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>2016 DNGTS</title>
+    <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
     <script src='./data.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
     <style>
-        body { margin:2; padding:0; }
+        body { margin:0; padding:0; }
         #map { position:absolute; top:0px; left:0px; bottom:0px; width:100%; }
     </style>
 </head>
@@ -41,7 +41,7 @@ map.on('load', function() {
             'fill-extrusion-color': {
                 'property': 'bangzhu1',
                 "stops": [
-                    [0, 'pinck'],
+                    [0, 'pink'],
                     [7, 'yellow'],
                     [22, 'green'],
                     [61, 'blue'],
